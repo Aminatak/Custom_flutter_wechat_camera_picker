@@ -269,7 +269,16 @@ class CameraPickerViewerState extends State<CameraPickerViewer> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(3),
       ),
-      onPressed: createAssetEntityAndPop,
+      //onPressed: createAssetEntityAndPop,
+      onPressed: () {
+      // Navigate to the new ShareMediaPage in FlutterFlow
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => ShareMediaPage(),
+        ),
+      );
+    },
       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
       child: Text(
         Singleton.textDelegate.confirm,
