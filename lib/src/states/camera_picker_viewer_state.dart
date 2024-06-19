@@ -275,7 +275,7 @@ class CameraPickerViewerState extends State<CameraPickerViewer> {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => ShareMediaPage(),
+          builder: (context) => Stage1Phase2(),
         ),
       );
     },
